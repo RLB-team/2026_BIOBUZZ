@@ -7,7 +7,8 @@ package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.util.RobotLog;
 
-public class logger {
+public class logger
+{
    public logger() {}
 
    public double run(final double sysVoltage, double exceptionTime, final double loopTime) {

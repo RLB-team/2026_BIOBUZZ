@@ -2,7 +2,8 @@ package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.hardware.DcMotorEx;
 
-public class intake {
+public class intake
+{
    private final DcMotorEx intaker, indexer;
 
    public intake(DcMotorEx intaker, DcMotorEx indexer) {

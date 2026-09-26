@@ -7,7 +7,8 @@ package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.hardware.DcMotorEx;
 
-public class outtake {
+public class outtake
+{
    private final DcMotorEx outtake1, outtake2;
 
    public outtake(DcMotorEx outtake1, DcMotorEx outtake2) {

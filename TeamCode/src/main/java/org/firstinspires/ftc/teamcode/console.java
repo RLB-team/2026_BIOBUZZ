@@ -8,7 +8,8 @@ package org.firstinspires.ftc.teamcode;
 import org.firstinspires.ftc.robotcore.external.Telemetry;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
 
-public class console {
+public class console
+{
    private final Telemetry telemetry;
    private final DcMotorEx outtake1, outtake2;
 

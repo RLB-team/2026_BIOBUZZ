@@ -2,7 +2,8 @@ package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.hardware.DcMotorEx;
 
-public class drive {
+public class drive
+{
    private final DcMotorEx frontLeft, frontRight, backLeft, backRight;
 
    public drive(DcMotorEx frontLeft, DcMotorEx frontRight,

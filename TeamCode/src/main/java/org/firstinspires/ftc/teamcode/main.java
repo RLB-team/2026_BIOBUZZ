@@ -14,7 +14,8 @@ import com.qualcomm.robotcore.hardware.VoltageSensor;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 @TeleOp(name = "Testing OpMode")
-public final class main extends LinearOpMode {
+public final class main extends LinearOpMode
+{
    @Override
    public void runOpMode() {
       double exceptionTime = 0;
