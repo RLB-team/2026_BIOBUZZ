@@ -10,7 +10,7 @@ public class intake {
       this.indexer = indexer;
    }
 
-   public void run(double aButton, double bButton, double xButton) {
+   public void run(final double aButton, final double bButton, final double xButton) {
       intaker.setPower(aButton);
       indexer.setPower(bButton - xButton);
    }

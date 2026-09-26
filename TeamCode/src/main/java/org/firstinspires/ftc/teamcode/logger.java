@@ -10,7 +10,7 @@ import com.qualcomm.robotcore.util.RobotLog;
 public class logger {
    public logger() {}
 
-   public double run(double sysVoltage, double exceptionTime, double loopTime) {
+   public double run(final double sysVoltage, double exceptionTime, final double loopTime) {
       if (sysVoltage < 10)
          exceptionTime += loopTime / 1000;
       if (exceptionTime >= 10)

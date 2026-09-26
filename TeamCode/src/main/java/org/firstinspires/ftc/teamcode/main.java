@@ -13,14 +13,14 @@ import com.qualcomm.robotcore.hardware.DcMotorEx;
 import com.qualcomm.robotcore.hardware.VoltageSensor;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
-@TeleOp (name = "Testing OpMode")
+@TeleOp(name = "Testing OpMode")
 public final class main extends LinearOpMode {
    @Override
    public void runOpMode() {
       double exceptionTime = 0;
       double loopTime = 0;
-      double sysVoltage; // Nice optimization; +8-12 Hz loop speed
-      
+      double sysVoltage;
+
       double x, y, rx;
       double aButton, bButton, xButton;
       double leftTrigger;
@@ -75,7 +75,7 @@ public final class main extends LinearOpMode {
          bButton = gamepad1.b ? 1 : 0;
          xButton = gamepad1.x ? 1 : 0;
 
-         leftTrigger = gamepad1.left_trigger; // 0.4
+         leftTrigger = gamepad1.left_trigger;
 
          drive.run(x, y, rx);
          intake.run(aButton, bButton, xButton);

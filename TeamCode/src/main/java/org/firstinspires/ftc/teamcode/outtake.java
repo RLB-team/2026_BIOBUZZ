@@ -15,7 +15,7 @@ public class outtake {
       this.outtake2 = outtake2;
    }
 
-   public void run(double leftTrigger) {
+   public void run(final double leftTrigger) {
       outtake1.setPower(leftTrigger);
       outtake2.setPower(leftTrigger);
    }

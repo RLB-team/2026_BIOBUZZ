@@ -13,7 +13,7 @@ public class drive {
       this.backRight = backRight;
    }
 
-   public void run(double x, double y, double rx) {
+   public void run(final double x, final double y, final double rx) {
       frontLeft.setPower(rx + x + y);
       backLeft.setPower(rx - x + y);
       frontRight.setPower(rx - x - y);
