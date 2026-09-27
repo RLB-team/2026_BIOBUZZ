@@ -1,21 +1,27 @@
 /* 2026
    Authors: Wade Kuhn
-   Game: BIOBUZZ
+   Game:    BIOBUZZ
+   License: GPL V3.0
    Logger.java manages error + exception handling */
 
 package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.util.RobotLog;
 
-public class logger
+public final class logger
 {
+   int motorSpeedCap = 1;
+
    public logger() {}
 
-   public double run(final double sysVoltage, double exceptionTime, final double loopTime) {
-      if (sysVoltage < 10)
+   public int run(final double sysVoltage, double exceptionTime, final double loopTime) {
+      if (sysVoltage < 10) {
          exceptionTime += loopTime / 1000;
-      if (exceptionTime >= 10)
+         motorSpeedCap = 2;
+      }
+      if (exceptionTime >= 10) {
          RobotLog.w("Exception time is " + exceptionTime + " seconds.");
-      return exceptionTime;
+      }
+      return motorSpeedCap;
    }
 }

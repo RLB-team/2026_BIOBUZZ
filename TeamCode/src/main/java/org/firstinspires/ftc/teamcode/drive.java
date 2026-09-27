@@ -1,13 +1,19 @@
+/* 2026
+   Authors: Wade Kuhn
+   Game:    BIOBUZZ
+   License: GPL V3.0
+   Drive.java is a simple, modular mecanum drive class */
+
 package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.hardware.DcMotorEx;
 
-public class drive
+public final class drive
 {
    private final DcMotorEx frontLeft, frontRight, backLeft, backRight;
 
-   public drive(DcMotorEx frontLeft, DcMotorEx frontRight,
-                DcMotorEx backLeft, DcMotorEx backRight) {
+   public drive(final DcMotorEx frontLeft, final DcMotorEx frontRight,
+                final DcMotorEx backLeft,  final DcMotorEx backRight) {
       this.frontLeft = frontLeft;
       this.frontRight = frontRight;
       this.backLeft = backLeft;
